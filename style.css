@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+      text-align: center;
+  }
+  .header{
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1598550476439-6847785fcea6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-color: rgba(0,0,0,0.8);
+    background-position: center;
+    background-size: cover;
+    height:70vh;
+}
+.overlay {
+ 
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    }
+.content {
+    color: white;
+    padding: 10%;
+    font-size: 20px;
+}
+.navbar{
+    float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+/* about */
+.par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    
+}
+.section {
+    background-color: rgba(0,0,0,0.1);
+}
+  /* cards */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 8px;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+ 
+.paddsection {
+	padding-top: 90px;
+	padding-bottom: 90px;
+  }
+  #contact {
+	height: auto;
+	width: 100%;
+	background-color :rgba(0,0,0,0.1);
+  }
+  
+  .contact-details {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .contact-details li {
+	padding-bottom: 10px;
+  }
+  
+  #contact input, #contact textarea {
+	width: 100%;
+  }
+  
+  
+  #contact  #sendmessage {
+	color: #18d26e;
+	border: 1px solid #18d26e;
+	display: none;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+	margin: 15px;
+  }
+  
+  #contact  #errormessage {
+	color: red;
+	display: none;
+	border: 1px solid red;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+	margin: 15px;
+  }
+  
+  #contact #sendmessage.show, #contact #errormessage.show, #contact .show {
+	display: block;
+  }
+  
+  #contact .validation {
+	color: red;
+	display: none;
+	margin: 0 0 20px;
+	font-weight: 400;
+	font-size: 13px;
+  }
+  
+ 
+/*-----------------------------------------------------------------------------------*/
+/*  Footer
+/*-----------------------------------------------------------------------------------*/
+
+#footer {
+	background: #f7f7f7;
+	padding-top: 50px;
+	padding-bottom: 50px;
+  }
+  
+  #footer .socials-media {
+	width: 100%;
+  }
+  
+  #footer .socials-media ul {
+	display: inline-block;
+	float: none;
+	margin: 0 0 20px 0;
+  }
+  
+  #footer .socials-media ul li {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+  }
+  
+  #footer .socials-media ul li a {
+	font-size: 24px;
+	color: #999;
+	letter-spacing: 0.1em;
+	font-weight: 500;
+	background: transparent;
+	text-transform: uppercase;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-ms-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+  }
+  
+  #footer .socials-media ul li a:hover {
+	color: #b8a07e;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-ms-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+  }
+  
+  #footer p {
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	font-weight: 500;
+	margin-top: 0;
+	text-transform: uppercase;
+  }
+   
